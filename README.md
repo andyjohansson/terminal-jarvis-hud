@@ -2,7 +2,7 @@
 
 A sci-fi HUD look for **macOS Terminal**, inspired by the holographic interfaces in the Iron Man and Avengers films. Arc-reactor cyan on near-black, a two-line HUD prompt and a short J.A.R.V.I.S. status greeting when you open a window.
 
-Companion to [obsidian-jarvis-hud](https://github.com/andyjohansson/obsidian-jarvis-hud).
+Want the same look in your notes? Try [Obsidian Jarvis HUD](https://github.com/andyjohansson/obsidian-jarvis-hud), with a cyan glow, HUD grid, angular headings and HUD-cornered callouts for Obsidian.
 
 ![Terminal Jarvis HUD demo](screenshots/terminal-jarvis-hud-demo.gif)
 
