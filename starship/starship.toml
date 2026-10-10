@@ -1,0 +1,91 @@
+# ======================================================================
+#  JARVIS HUD  ·  Starship prompt
+#  https://starship.rs  ·  works with any font (no Nerd Font needed)
+# ======================================================================
+
+"$schema" = "https://starship.rs/config-schema.json"
+
+palette = "jarvis"
+add_newline = true
+command_timeout = 800
+
+format = """
+[┌─](hud_dim)[ ◆ ](bold hud_cyan)$directory$git_branch$git_status$git_state$python$nodejs$rust$golang$cmd_duration$fill$time
+[└─](hud_dim)$character"""
+
+[palettes.jarvis]
+hud_cyan  = "#00d8ff"
+hud_ice   = "#7deeff"
+hud_text  = "#d4f3ff"
+hud_dim   = "#2f5566"
+hud_muted = "#6f93a5"
+hud_gold  = "#ffb347"
+hud_red   = "#ff4d5e"
+hud_green = "#3dffb8"
+
+[fill]
+symbol = " "
+
+[character]
+success_symbol = "[▸](bold hud_cyan)"
+error_symbol   = "[▸](bold hud_red)"
+vimcmd_symbol  = "[◂](bold hud_gold)"
+
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "bold hud_text"
+read_only = " ⊘"
+read_only_style = "hud_red"
+truncation_length = 3
+truncation_symbol = "…/"
+home_symbol = "~"
+
+[git_branch]
+format = "[⟨](hud_dim)[$symbol$branch]($style)[⟩](hud_dim) "
+symbol = "⎇ "
+style = "hud_cyan"
+
+[git_status]
+format = "([$all_status$ahead_behind]($style) )"
+style = "hud_gold"
+conflicted = "≠"
+ahead = "↑${count}"
+behind = "↓${count}"
+diverged = "↕"
+untracked = "?"
+stashed = "≡"
+modified = "●"
+staged = "+"
+renamed = "»"
+deleted = "✕"
+
+[git_state]
+format = "[$state( $progress_current/$progress_total)]($style) "
+style = "bold hud_gold"
+
+[cmd_duration]
+min_time = 2000
+format = "[Δ $duration]($style) "
+style = "hud_gold"
+
+[time]
+disabled = false
+format = "[$time]($style)"
+time_format = "%H:%M"
+style = "hud_muted"
+
+[python]
+format = "[py $version]($style) "
+style = "hud_muted"
+
+[nodejs]
+format = "[node $version]($style) "
+style = "hud_muted"
+
+[rust]
+format = "[rs $version]($style) "
+style = "hud_muted"
+
+[golang]
+format = "[go $version]($style) "
+style = "hud_muted"
