@@ -4,7 +4,7 @@ A sci-fi HUD look for **macOS Terminal**, inspired by the holographic interfaces
 
 Companion to [obsidian-jarvis-hud](https://github.com/andyjohansson/obsidian-jarvis-hud).
 
-![Terminal Jarvis HUD preview](screenshots/preview.png)
+![Terminal Jarvis HUD demo](screenshots/terminal-jarvis-hud-demo.gif)
 
 ## What's included
 
